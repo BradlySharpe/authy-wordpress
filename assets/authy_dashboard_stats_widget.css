@@ -69,4 +69,14 @@
 
 .authy_dashboard_link {
 	text-align: right;
+	overflow: hidden;
+}
+
+.authy_total_users {
+	width:50%;
+	float:left;
+}
+
+.authy_label {
+	font-weight: 800;
 }
