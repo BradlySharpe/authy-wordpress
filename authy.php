@@ -539,6 +539,10 @@ class Authy {
                             <th><?php printf( __( 'Plan', 'authy' ) ); ?></th>
                             <td><?php print esc_attr( ucfirst( $details['app']->plan ) ); ?></td>
                         </tr>
+                        <tr>
+                            <th><?php printf( __( 'Application ID', 'authy' ) ); ?></th>
+                            <td><?php print esc_attr( ucfirst( $details['app']->app_id ) ); ?></td>
+                        </tr>
                     </tbody>
                 </table>
 
