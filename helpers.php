@@ -458,15 +458,14 @@ function authy_show_stats_dashboard() {
   }
   ?>
   </div>
-    <?php 
-      if (array_key_exists('total_users', $objStats)){
-        echo "<p class=\"authy_total_users\"><span class=\"authy_label\">Total Users:</span> $objStats->total_users</p>";
-      }
-    ?>
-    
-    <p class="authy_dashboard_link"><a href="https://dashboard.authy.com/" title="Go to Authy Dashboard" target="_blank">Go to Authy Dashboard</a></p>
+  <?php 
+  if (array_key_exists('total_users', $objStats)){
+    echo "<p class=\"authy_total_users\"><span class=\"authy_label\">Total Users:</span> $objStats->total_users</p>\n";
+  }
 
-  <?php
+  if (array_key_exists('app_id', $objStats)){
+    echo "<p class=\"authy_dashboard_link\"><a href=\"https://dashboard.authy.com/applications/$objStats->app_id\" title=\"Go to Authy Dashboard\" target=\"_blank\">Go to Authy Dashboard</a></p>\n";
+  }
 }
 
 /**
